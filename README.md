@@ -7,5 +7,11 @@ Implementation of various applications
 - Infix / Postfix converter
 - Check for balanced parentheses
 
+## Test
+Run JUnit tests
+```bash
+mvn test
+```
+
 ## License
 This project is released under the [MIT License](LICENSE.txt)

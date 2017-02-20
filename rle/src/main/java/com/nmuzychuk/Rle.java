@@ -1,7 +1,10 @@
 package com.nmuzychuk;
 
-class Rle {
-    static String encode(String s) {
+public final class Rle {
+    private Rle() {
+    }
+
+    public static String encode(final String s) {
         StringBuilder encoded = new StringBuilder();
 
         int count = 1;
@@ -18,7 +21,7 @@ class Rle {
         return encoded.toString();
     }
 
-    static String decode(String s) {
+    public static String decode(final String s) {
         StringBuilder decoded = new StringBuilder();
         StringBuilder digits = new StringBuilder();
 

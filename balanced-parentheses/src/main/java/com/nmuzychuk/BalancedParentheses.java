@@ -3,8 +3,11 @@ package com.nmuzychuk;
 import java.util.HashMap;
 import java.util.Stack;
 
-class BalancedParentheses {
-    static boolean isBalanced(String s) {
+public final class BalancedParentheses {
+    private BalancedParentheses() {
+    }
+
+    public static boolean isBalanced(final String s) {
         HashMap<Character, Character> m = new HashMap<Character, Character>();
         m.put(')', '(');
         m.put(']', '[');

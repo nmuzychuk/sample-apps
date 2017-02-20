@@ -2,10 +2,7 @@ package com.nmuzychuk;
 
 import junit.framework.TestCase;
 
-public class BalancedParenthesesTest
-        extends TestCase
-
-{
+public class BalancedParenthesesTest extends TestCase {
     public void testEmpty() {
         String s = "";
 

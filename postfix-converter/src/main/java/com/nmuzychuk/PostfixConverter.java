@@ -2,8 +2,11 @@ package com.nmuzychuk;
 
 import java.util.Stack;
 
-class PostfixConverter {
-    static String convertToPostfix(String s) {
+public final class PostfixConverter {
+    private PostfixConverter() {
+    }
+
+    public static String convertToPostfix(final String s) {
         Stack<Character> stack = new Stack<Character>();
         String postfix = "";
 
@@ -28,7 +31,7 @@ class PostfixConverter {
                         }
                         break;
                     default:
-                        if (stack.isEmpty() || precedence(stack.peek()) < precedence(c)) {
+                        if (stack.isEmpty() || prec(stack.peek()) < prec(c)) {
                             stack.push(c);
                         } else {
                             char operator = stack.pop();
@@ -48,7 +51,7 @@ class PostfixConverter {
         return postfix;
     }
 
-    static int convertToInfix(String s) {
+    public static int convertToInfix(final String s) {
         Stack<Integer> stack = new Stack<Integer>();
 
         for (int i = 0; i < s.length(); i++) {
@@ -73,6 +76,8 @@ class PostfixConverter {
                     case '/':
                         stack.push(op1 / op2);
                         break;
+                    default:
+                        break;
                 }
             }
         }
@@ -80,7 +85,7 @@ class PostfixConverter {
         return stack.pop();
     }
 
-    private static boolean isOperand(char c) {
+    private static boolean isOperand(final char c) {
         switch (c) {
             case '+':
             case '-':
@@ -94,7 +99,7 @@ class PostfixConverter {
         }
     }
 
-    private static int precedence(char c) {
+    private static int prec(final char c) {
         switch (c) {
             case '+':
             case '-':

@@ -2,19 +2,23 @@ package com.nmuzychuk;
 
 import junit.framework.TestCase;
 
-public class RleTest
-        extends TestCase {
-
+public class RleTest extends TestCase {
     public void testEncodeCase1() {
         assertEquals("2a", Rle.encode("aa"));
     }
 
     public void testEncodeCase2() {
-        assertEquals("12W1B12W3B24W1B14W", Rle.encode("WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW"));
+        String s1, s2, s;
+        s1 = "WWWWWWWWWWWWBWWWWWWWWWWWWBBB";
+        s2 = "WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
+        s = s1 + s2;
+
+        assertEquals("12W1B12W3B24W1B14W", Rle.encode(s));
     }
 
     public void testEncodeCase3() {
-        assertEquals("1A1B1C1A1B1C1A1B1C3D6F", Rle.encode("ABCABCABCDDDFFFFFF"));
+        String s = "ABCABCABCDDDFFFFFF";
+        assertEquals("1A1B1C1A1B1C1A1B1C3D6F", Rle.encode(s));
     }
 
     public void testDecodeCase1() {
@@ -22,10 +26,17 @@ public class RleTest
     }
 
     public void testDecodeCase2() {
-        assertEquals("WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW", Rle.decode("12W1B12W3B24W1B14W"));
+        String e1, e2, e;
+        e1 = "WWWWWWWWWWWWBWWWWWWWWWWWWBBB";
+        e2 = "WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
+        e = e1 + e2;
+
+        assertEquals(e, Rle.decode("12W1B12W3B24W1B14W"));
     }
 
     public void testDecodeCase3() {
-        assertEquals("ABCABCABCDDDFFFFFF", Rle.decode("1A1B1C1A1B1C1A1B1C3D6F"));
+        String e = "ABCABCABCDDDFFFFFF";
+
+        assertEquals(e, Rle.decode("1A1B1C1A1B1C1A1B1C3D6F"));
     }
 }
