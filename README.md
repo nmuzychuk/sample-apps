@@ -6,6 +6,7 @@ Implementation of various applications
 - Run-length encoding
 - Infix / Postfix converter
 - Check for balanced parentheses
+- Triangular number
 
 ## Test
 Run JUnit tests

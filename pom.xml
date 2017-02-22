@@ -16,6 +16,7 @@
         <module>balanced-parentheses</module>
         <module>postfix-converter</module>
         <module>rle</module>
+        <module>triangular-number</module>
     </modules>
 
     <build>
