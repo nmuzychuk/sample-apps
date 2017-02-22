@@ -8,6 +8,7 @@ Implementation of various applications
 - Check for balanced parentheses
 - Triangular number
 - Factorial
+- Anagram
 
 ## Test
 Run JUnit tests

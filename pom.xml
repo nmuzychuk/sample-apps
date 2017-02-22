@@ -18,6 +18,7 @@
         <module>rle</module>
         <module>triangular-number</module>
         <module>factorial</module>
+        <module>anagram</module>
     </modules>
 
     <build>
