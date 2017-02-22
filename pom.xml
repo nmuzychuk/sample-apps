@@ -17,6 +17,7 @@
         <module>postfix-converter</module>
         <module>rle</module>
         <module>triangular-number</module>
+        <module>factorial</module>
     </modules>
 
     <build>

@@ -7,6 +7,7 @@ Implementation of various applications
 - Infix / Postfix converter
 - Check for balanced parentheses
 - Triangular number
+- Factorial
 
 ## Test
 Run JUnit tests
