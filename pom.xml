@@ -19,6 +19,7 @@
         <module>triangular-number</module>
         <module>factorial</module>
         <module>anagram</module>
+        <module>toh</module>
     </modules>
 
     <build>

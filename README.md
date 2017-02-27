@@ -9,6 +9,7 @@ Implementation of various applications
 - Triangular number
 - Factorial
 - Anagram
+- Tower of Hanoi
 
 ## Test
 Run JUnit tests
