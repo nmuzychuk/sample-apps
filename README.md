@@ -10,6 +10,7 @@ Implementation of various applications
 - Factorial
 - Anagram
 - Tower of Hanoi
+- Letter frequency
 
 ## Test
 Run JUnit tests
