@@ -1,6 +1,8 @@
 package com.nmuzychuk;
 
 import static org.junit.Assert.assertEquals;
+import static com.nmuzychuk.TNumber.tNumberLoop;
+import static com.nmuzychuk.TNumber.tNumberRec;
 
 import org.junit.Test;
 
@@ -10,8 +12,8 @@ public class TNumberTest {
         final int expected = 1;
         final int n = 1;
 
-        assertEquals(expected, TNumber.tNumberLoop(n));
-        assertEquals(expected, TNumber.tNumberRec(n));
+        assertEquals(expected, tNumberLoop(n));
+        assertEquals(expected, tNumberRec(n));
     }
 
     @Test
@@ -19,8 +21,8 @@ public class TNumberTest {
         final int expected = 3;
         final int n = 2;
 
-        assertEquals(expected, TNumber.tNumberLoop(n));
-        assertEquals(expected, TNumber.tNumberRec(n));
+        assertEquals(expected, tNumberLoop(n));
+        assertEquals(expected, tNumberRec(n));
     }
 
     @Test
@@ -28,8 +30,8 @@ public class TNumberTest {
         final int expected = 6;
         final int n = 3;
 
-        assertEquals(expected, TNumber.tNumberLoop(n));
-        assertEquals(expected, TNumber.tNumberRec(n));
+        assertEquals(expected, tNumberLoop(n));
+        assertEquals(expected, tNumberRec(n));
     }
 
     @Test
@@ -37,8 +39,8 @@ public class TNumberTest {
         final int expected = 55;
         final int n = 10;
 
-        assertEquals(expected, TNumber.tNumberLoop(n));
-        assertEquals(expected, TNumber.tNumberRec(n));
+        assertEquals(expected, tNumberLoop(n));
+        assertEquals(expected, tNumberRec(n));
     }
 
     @Test
@@ -46,7 +48,7 @@ public class TNumberTest {
         final int expected = 5050;
         final int n = 100;
 
-        assertEquals(expected, TNumber.tNumberLoop(n));
-        assertEquals(expected, TNumber.tNumberRec(n));
+        assertEquals(expected, tNumberLoop(n));
+        assertEquals(expected, tNumberRec(n));
     }
 }

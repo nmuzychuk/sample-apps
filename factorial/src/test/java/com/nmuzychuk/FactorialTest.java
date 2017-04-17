@@ -1,6 +1,8 @@
 package com.nmuzychuk;
 
 import static org.junit.Assert.assertEquals;
+import static com.nmuzychuk.Factorial.factorialLoop;
+import static com.nmuzychuk.Factorial.factorialRec;
 
 import org.junit.Test;
 
@@ -10,8 +12,8 @@ public class FactorialTest {
         final int expected = 1;
         final int n = 0;
 
-        assertEquals(expected, Factorial.factorialLoop(n));
-        assertEquals(expected, Factorial.factorialRec(n));
+        assertEquals(expected, factorialLoop(n));
+        assertEquals(expected, factorialRec(n));
     }
 
     @Test
@@ -19,8 +21,8 @@ public class FactorialTest {
         final int expected = 1;
         final int n = 1;
 
-        assertEquals(expected, Factorial.factorialLoop(n));
-        assertEquals(expected, Factorial.factorialRec(n));
+        assertEquals(expected, factorialLoop(n));
+        assertEquals(expected, factorialRec(n));
     }
 
     @Test
@@ -28,8 +30,8 @@ public class FactorialTest {
         final int expected = 2;
         final int n = 2;
 
-        assertEquals(expected, Factorial.factorialLoop(n));
-        assertEquals(expected, Factorial.factorialRec(n));
+        assertEquals(expected, factorialLoop(n));
+        assertEquals(expected, factorialRec(n));
     }
 
     @Test
@@ -37,8 +39,8 @@ public class FactorialTest {
         final int expected = 120;
         final int n = 5;
 
-        assertEquals(expected, Factorial.factorialLoop(n));
-        assertEquals(expected, Factorial.factorialRec(n));
+        assertEquals(expected, factorialLoop(n));
+        assertEquals(expected, factorialRec(n));
     }
 
     @Test
@@ -46,7 +48,7 @@ public class FactorialTest {
         final int expected = 3628800;
         final int n = 10;
 
-        assertEquals(expected, Factorial.factorialLoop(n));
-        assertEquals(expected, Factorial.factorialRec(n));
+        assertEquals(expected, factorialLoop(n));
+        assertEquals(expected, factorialRec(n));
     }
 }
