@@ -1,10 +1,10 @@
 package com.nmuzychuk;
 
+import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 import static com.nmuzychuk.TNumber.tNumberLoop;
 import static com.nmuzychuk.TNumber.tNumberRec;
-
-import org.junit.Test;
 
 public class TNumberTest {
     @Test

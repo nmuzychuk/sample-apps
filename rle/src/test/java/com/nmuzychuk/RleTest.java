@@ -1,39 +1,46 @@
 package com.nmuzychuk;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class RleTest extends TestCase {
+import static org.junit.Assert.assertEquals;
+
+public class RleTest {
+    @Test
     public void testEncodeCase1() {
         assertEquals("2a", Rle.encode("aa"));
     }
 
+    @Test
     public void testEncodeCase2() {
-        String s1, s2, s;
-        s1 = "WWWWWWWWWWWWBWWWWWWWWWWWWBBB";
-        s2 = "WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
-        s = s1 + s2;
+        StringBuilder sb = new StringBuilder();
+        sb.append("WWWWWWWWWWWWBWWWWWWWWWWWWBBB");
+        sb.append("WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW");
 
-        assertEquals("12W1B12W3B24W1B14W", Rle.encode(s));
+        assertEquals("12W1B12W3B24W1B14W", Rle.encode(sb.toString()));
     }
 
+    @Test
     public void testEncodeCase3() {
         String s = "ABCABCABCDDDFFFFFF";
         assertEquals("1A1B1C1A1B1C1A1B1C3D6F", Rle.encode(s));
     }
 
+    @Test
     public void testDecodeCase1() {
         assertEquals("aa", Rle.decode("2a"));
     }
 
+    @Test
     public void testDecodeCase2() {
-        String e1, e2, e;
-        e1 = "WWWWWWWWWWWWBWWWWWWWWWWWWBBB";
-        e2 = "WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
-        e = e1 + e2;
+        StringBuilder sb = new StringBuilder();
 
-        assertEquals(e, Rle.decode("12W1B12W3B24W1B14W"));
+        sb.append("WWWWWWWWWWWWBWWWWWWWWWWWWBBB");
+        sb.append("WWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW");
+
+        assertEquals(sb.toString(), Rle.decode("12W1B12W3B24W1B14W"));
     }
 
+    @Test
     public void testDecodeCase3() {
         String e = "ABCABCABCDDDFFFFFF";
 

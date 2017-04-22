@@ -1,10 +1,10 @@
 package com.nmuzychuk;
 
+import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 import static com.nmuzychuk.Factorial.factorialLoop;
 import static com.nmuzychuk.Factorial.factorialRec;
-
-import org.junit.Test;
 
 public class FactorialTest {
     @Test
