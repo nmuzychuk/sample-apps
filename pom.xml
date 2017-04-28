@@ -21,6 +21,7 @@
         <module>anagram</module>
         <module>toh</module>
         <module>letter-frequency</module>
+        <module>base64</module>
     </modules>
 
     <build>

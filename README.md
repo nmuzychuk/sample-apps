@@ -11,6 +11,7 @@ Implementation of various applications
 - Anagram
 - Tower of Hanoi
 - Letter frequency
+- Base64 encode
 
 ## Test
 Run JUnit tests
