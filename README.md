@@ -12,6 +12,7 @@ Implementation of various applications
 - Tower of Hanoi
 - Letter frequency
 - Base64 encode
+- Word count
 
 ## Test
 Run JUnit tests

@@ -22,6 +22,7 @@
         <module>toh</module>
         <module>letter-frequency</module>
         <module>base64</module>
+        <module>word-counter</module>
     </modules>
 
     <build>
