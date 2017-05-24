@@ -13,6 +13,7 @@ Implementation of various applications
 - Letter frequency
 - Base64 encode
 - Word count
+- Random name generator
 
 ## Test
 Run JUnit tests

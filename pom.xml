@@ -23,7 +23,8 @@
         <module>letter-frequency</module>
         <module>base64</module>
         <module>word-counter</module>
-    </modules>
+        <module>random-name-generator</module>
+  </modules>
 
     <build>
         <plugins>
