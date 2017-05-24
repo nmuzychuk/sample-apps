@@ -24,3 +24,6 @@ hs_err_pid*
 # Vagrant files
 .vagrant/
 ubuntu-xenial-16.04-cloudimg-console.log
+
+# Maven Wrapper
+!maven-wrapper.jar
