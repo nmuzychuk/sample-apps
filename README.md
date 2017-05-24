@@ -17,8 +17,8 @@ Implementation of various applications
 
 ## Test
 Run JUnit tests
-```bash
-mvn test
+```
+./mvnw test
 ```
 
 ## License
