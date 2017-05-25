@@ -1,5 +1,6 @@
 # Sample Apps
 [![Build Status](https://travis-ci.org/nmuzychuk/sample-apps.svg?branch=master)](https://travis-ci.org/nmuzychuk/sample-apps)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/86d3034c250d434d9db7b427e2bd9667)](https://www.codacy.com/app/nmuzychuk/sample-apps)
 
 ## Overview
 Implementation of various applications
