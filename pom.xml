@@ -24,7 +24,7 @@
         <module>base64</module>
         <module>word-counter</module>
         <module>random-name-generator</module>
-  </modules>
+    </modules>
 
     <build>
         <plugins>
@@ -48,6 +48,21 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <maxmem>256m</maxmem>
+                    <aggregate>true</aggregate>
+                    <check/>
+                </configuration>
             </plugin>
         </plugins>
     </build>
