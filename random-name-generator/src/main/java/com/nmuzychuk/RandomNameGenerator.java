@@ -3,9 +3,6 @@ package com.nmuzychuk;
 import java.util.Random;
 
 public final class RandomNameGenerator {
-    private RandomNameGenerator() {
-    }
-
     private static final String[] ADJECTIVES = {
             "important", "large", "popular", "mad", "lonely",
             "hot", "useful", "scared", "old", "healthy", "strong",
@@ -21,6 +18,9 @@ public final class RandomNameGenerator {
             "octopus", "panda", "rabbit", "shark", "spider",
             "squirrel", "tiger", "turtle", "wolf", "zebra"
     };
+
+    private RandomNameGenerator() {
+    }
 
     public static String getName() {
         int i;
