@@ -3,11 +3,10 @@ jdk:
 - oraclejdk8
 - oraclejdk7
 after_success:
-- "./mvnw clean cobertura:cobertura"
-- wget -O ~/codacy-coverage-reporter-assembly-latest.jar
-  https://github.com/codacy/codacy-coverage-reporter/releases/download/2.0.0/codacy-coverage-reporter-2.0.0-assembly.jar
-- java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter
-  -l Java -r target/site/cobertura/coverage.xml
+- "if [[ `java -version 2>&1 | head -n 1` == *1.8.* ]]; then
+     ./mvnw clean cobertura:cobertura;
+     wget -O ~/codacy-coverage-reporter-assembly-latest.jar https://github.com/codacy/codacy-coverage-reporter/releases/download/2.0.0/codacy-coverage-reporter-2.0.0-assembly.jar;
+     java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter -l Java -r target/site/cobertura/coverage.xml; fi"
 env:
   global:
     secure: HUYpVy0D0FoELexxROsk/qDrWaTw7nH2bqok5D4GNhgr9Nne9yihFD8PAT+kfIsLV4EBGJvvV5QzIzP/KoCV/TBt39w2mjOjV4rf4AdyAICfcIVsJJVRJtG0tqAQQt8T62e9v78f4vrjsg8kzRL4kKVtVGjENCv01CvN1Oaqu8G12FvbgrO+xuS7sN7pCfJNmQyyf1DR4AAbJPfaBV9mNo5CLIAtvAfOZLxTXDEDk4lkyp0389shVTjAqI5zt5pOUASF9QeRo42xkGbynP7HLiABhCVvtY+B1OHj9hyLWjir42ygdVkuMoxz1bgYteeFrBEPK9wrWIeGzgctEdHV5mC5w+bqn30WVbQNRo3m9TYA3Aq0PhzHS1iUMmrXNTL+h14VklS28LyJyC+/GkouOmNz+TTpggHoMH3cpHoaOfTHc9V406XMINfZ1uDeAWGREM5C98DWxtEIGVF7wVYLZ0dfr27CLPH9oQo/Erd7I/KqPLapmc5Ae1jcDxcuH+z9U1Mff5EmCIWt0Y90qXeYeIjL+W+kpt7CMDJomvCL3AcZBTOZIihLdW383uCDO/1iOOiI1AsDKLdekNKiXjZ2C93yLzkdCgipu6qc/WDKmRA6ti1Bki/KZU2BuFYLunhXTLV2P3ti7snC2Ie3u0Znxzh533artLPDF9rEZoEg/s8=
