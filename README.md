@@ -16,6 +16,7 @@ Implementation of various applications
 - Base64 encode
 - Word count
 - Random name generator
+- Palindrome checker
 
 ## Test
 Run JUnit tests
