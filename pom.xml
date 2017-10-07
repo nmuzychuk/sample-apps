@@ -25,6 +25,7 @@
         <module>word-counter</module>
         <module>random-name-generator</module>
         <module>palindrome</module>
+        <module>leap-year</module>
     </modules>
 
     <build>

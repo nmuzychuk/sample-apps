@@ -17,6 +17,7 @@ Implementation of various applications
 - Word count
 - Random name generator
 - Palindrome checker
+- Leap year
 
 ## Test
 Run JUnit tests
