@@ -26,6 +26,7 @@
         <module>random-name-generator</module>
         <module>palindrome</module>
         <module>leap-year</module>
+        <module>pig-latin</module>
     </modules>
 
     <build>

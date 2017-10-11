@@ -18,6 +18,7 @@ Implementation of various applications
 - Random name generator
 - Palindrome checker
 - Leap year
+- Pig Latin
 
 ## Test
 Run JUnit tests
