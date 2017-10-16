@@ -19,6 +19,7 @@ Implementation of various applications
 - Palindrome checker
 - Leap year
 - Pig Latin
+- Temperature converter
 
 ## Test
 Run JUnit tests

@@ -27,6 +27,7 @@
         <module>palindrome</module>
         <module>leap-year</module>
         <module>pig-latin</module>
+        <module>temperature-converter</module>
     </modules>
 
     <build>
