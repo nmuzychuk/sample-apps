@@ -28,6 +28,7 @@
         <module>leap-year</module>
         <module>pig-latin</module>
         <module>temperature-converter</module>
+        <module>times-table</module>
     </modules>
 
     <build>

@@ -20,6 +20,7 @@ Implementation of various applications
 - Leap year
 - Pig Latin
 - Temperature converter
+- Times table
 
 ## Test
 Run JUnit tests
