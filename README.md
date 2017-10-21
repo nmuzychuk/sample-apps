@@ -21,6 +21,7 @@ Implementation of various applications
 - Pig Latin
 - Temperature converter
 - Times table
+- Prime number
 
 ## Test
 Run JUnit tests

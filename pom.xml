@@ -29,6 +29,7 @@
         <module>pig-latin</module>
         <module>temperature-converter</module>
         <module>times-table</module>
+        <module>prime-number</module>
     </modules>
 
     <build>
