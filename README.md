@@ -22,6 +22,7 @@ Implementation of various applications
 - Temperature converter
 - Times table
 - Prime number
+- Catalan number
 
 ## Test
 Run JUnit tests

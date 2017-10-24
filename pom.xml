@@ -30,6 +30,7 @@
         <module>temperature-converter</module>
         <module>times-table</module>
         <module>prime-number</module>
+        <module>catalan-number</module>
     </modules>
 
     <build>
