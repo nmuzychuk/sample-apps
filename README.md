@@ -23,6 +23,7 @@ Implementation of various applications
 - Times table
 - Prime number
 - Catalan number
+- Reverse integer
 
 ## Test
 Run JUnit tests
