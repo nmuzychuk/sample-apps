@@ -32,6 +32,7 @@
         <module>prime-number</module>
         <module>catalan-number</module>
         <module>reverse-integer</module>
+        <module>roman-converter</module>
     </modules>
 
     <build>

@@ -24,6 +24,7 @@ Implementation of various applications
 - Prime number
 - Catalan number
 - Reverse integer
+- Roman to decimal converter
 
 ## Test
 Run JUnit tests
