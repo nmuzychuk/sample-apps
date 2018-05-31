@@ -33,6 +33,7 @@
         <module>catalan-number</module>
         <module>reverse-integer</module>
         <module>roman-converter</module>
+        <module>soundex</module>
     </modules>
 
     <build>

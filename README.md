@@ -25,6 +25,7 @@ Implementation of various applications
 - Catalan number
 - Reverse integer
 - Roman to decimal converter
+- Soundex
 
 ## Test
 Run JUnit tests
