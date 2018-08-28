@@ -34,6 +34,7 @@
         <module>reverse-integer</module>
         <module>roman-converter</module>
         <module>soundex</module>
+        <module>rot13</module>
     </modules>
 
     <build>

@@ -26,6 +26,7 @@ Implementation of various applications
 - Reverse integer
 - Roman to decimal converter
 - Soundex
+- ROT13
 
 ## Test
 Run JUnit tests
